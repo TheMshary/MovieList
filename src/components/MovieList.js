@@ -24,7 +24,7 @@ const MovieList = ({ watched }) => {
   return (
     <>
       <h1>
-        Watchlist
+        {watched ? "Watched" : "Watchlist"}
         <span className="badge badge-pill badge-light">
           {filteredMovies.length ?? movieList.length}
         </span>
