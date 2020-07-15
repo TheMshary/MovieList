@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// Styles
+import { AddMoviePlusButton } from "../styles";
+
 // Stores
 import movieStore from "../stores/movieStore";
 
@@ -21,14 +24,10 @@ const AddMovie = () => {
           value={movieName}
           placeholder="New Movie..."
         />
-        <div class="input-group-append">
-          <span
-            class="input-group-text"
-            onClick={addMovie}
-            style={{ backgroundColor: "#21b6a8" }}
-          >
+        <div className="input-group-append">
+          <AddMoviePlusButton className="input-group-text" onClick={addMovie}>
             +
-          </span>
+          </AddMoviePlusButton>
         </div>
       </div>
     </form>
