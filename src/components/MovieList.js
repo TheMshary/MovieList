@@ -26,7 +26,7 @@ const MovieList = ({ watched }) => {
       <h1>
         {watched ? "Watched" : "Watchlist"}
         <span className="badge badge-pill badge-light">
-          {filteredMovies.length ?? movieList.length}
+          {filteredMovies.length}
         </span>
       </h1>
       <div className="input-group my-3">
